@@ -1,0 +1,109 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 2%;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+.menu-icon {
+  width: 4vw;
+  cursor: pointer;
+}
+.search-icon {
+  width: 4vw;
+}
+
+.search-box {
+  display: flex;
+}
+
+.human-icon {
+  width: 4vw;
+}
+
+.calendar-icon {
+  width: 4vw;
+}
+.triangle-icon {
+  width: 3vw;
+  cursor: pointer;
+}
+
+.dark .navbar {
+  background: #1097f1f0;
+  color: #fff;
+}
+
+.dark .dropdown-menu {
+  background-color: #1097f1f0;
+  color: #fff;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+}
+
+.dropdown-menu.inactive {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+
+.dropdown-menu ul li {
+  padding: 10 px;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+.dropdown-menu ul li:hover a {
+  color: red;
+  cursor: pointer;
+}
+
+.dropdownItem img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.dropdownItem a {
+  max-width: 100px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.personal-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+
+.menu-container,
+.appearence-menu-container {
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+
+.calendar-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
